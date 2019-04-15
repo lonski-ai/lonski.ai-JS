@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    'use strict'
+    var userString = prompt('Введите строку:', '');
+    var numberVowels = 0;
+
+    function countVowels(userString) {
+      userString = userString.split('');
+      for (var i = 0; userString.length > i; i++) {
+        if (userString[i] == 'а' || userString[i] == 'А' || userString[i] == 'е' || userString[i] == 'Е' || userString[i] == 'ё' || userString[i] == 'Ё' ||
+            userString[i] == 'и' || userString[i] == 'И' || userString[i] == 'о' || userString[i] == 'О' || userString[i] == 'у' || userString[i] == 'У' ||
+            userString[i] == 'э' || userString[i] == 'Э' || userString[i] == 'ю' || userString[i] == 'Ю' || userString[i] == 'я' || userString[i] == 'Я' || userString[i] == 'ы') numberVowels++;
+      }
+      return numberVowels;
+    }
+
+    countVowels(userString);
+    console.log('Количество гласных букв = ' + numberVowels);
+  </script>
+</body>
+</html>
