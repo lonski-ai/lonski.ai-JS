@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+  <body>
+    <script>
+      var j = 0;
+      var b = true;
+      var sum = 0;
+      var array = [];
+      do {
+        var number = Number(prompt('Ведите число', ''));
+
+        if (isNaN(number) || number == '') {
+          b = false;
+        } else {
+          array[j] = number;
+
+          sum = sum + array[j];
+          j++;
+        }
+      }
+      while (b);
+      console.log(sum);
+    </script>
+  </body>
+</html>
